@@ -1,0 +1,21 @@
+.header {
+  display: grid;
+  grid-template-columns: 6fr 2fr 1fr 1fr;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+nav.left {
+  display: flex;
+  align-content: center;
+}
+
+nav.right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
