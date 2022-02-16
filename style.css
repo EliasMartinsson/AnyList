@@ -1,21 +1,39 @@
-.header {
-  display: grid;
-  grid-template-columns: 6fr 2fr 1fr 1fr;
+*{
+  margin: 0;
+  padding: 0;
 }
-header {
+
+nav.upper{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+nav.lower{
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+header{
+  border: solid black
+}
+
+body{
+  padding-left: 20%;
+  padding-right: 20%;
+  border: solid black;
+}
+
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   gap: 2em;
 }
 
-nav.left {
+.search{
   display: flex;
-  align-content: center;
-}
-
-nav.right {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3em;
+  justify-content: flex-end;
 }
