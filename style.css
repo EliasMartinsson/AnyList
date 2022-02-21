@@ -87,10 +87,40 @@ footer {
   padding: 5rem;
 }
 
-.upper-footer h1 {
+footer h1 {
   color: white;
+}
+
+footer nav{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .upper-footer a {
   color: black;
 }
+
+.lower-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.lower-footer li{
+  list-style: none;
+}
+ .lower-footer a{
+   color: white;
+ }
+
+ .front-image{
+   display: flex;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   padding-left: 20%;
+   padding-right: 20%;
+ }
+ .front-image img{
+   width: 20rem;
+ }
