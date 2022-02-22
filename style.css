@@ -91,7 +91,7 @@ footer h1 {
   color: white;
 }
 
-footer nav{
+footer nav {
   display: flex;
   flex-wrap: wrap;
 }
@@ -100,27 +100,36 @@ footer nav{
   color: black;
 }
 
-.lower-footer{
+.lower-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
 
-.lower-footer li{
+.lower-footer li {
   list-style: none;
 }
- .lower-footer a{
-   color: white;
- }
+.lower-footer a {
+  color: white;
+}
 
- .front-image{
-   display: flex;
-   padding-top: 5rem;
-   padding-bottom: 5rem;
-   padding-left: 20%;
-   padding-right: 20%;
- }
- .front-image img{
-   width: 20rem;
- }
+.front-image {
+  font-size: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.front-image img {
+  width: 30vmax;
+  height: auto;
+}
+.front-image a {
+  color: white;
+  background-color: #1c3572;
+  padding: 0.5rem;
+}
