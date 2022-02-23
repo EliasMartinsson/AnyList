@@ -1,7 +1,7 @@
- console.log("Hello world!");
+
  window.onscroll = function() {stickyHeader()};
 
- var header = document.getElementById("stickyHeader");
+ var header = document.getElementById("header");
 
  var sticky = header.offsetTop;
 
@@ -12,4 +12,6 @@
      else{
          header.classList.remove("sticky");
      }
- }
+    }
+
+    

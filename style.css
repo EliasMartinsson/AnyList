@@ -8,6 +8,18 @@
   text-decoration: none;
 }
 
+* li {
+  list-style: none;
+}
+
+.header :hover {
+  color: yellow;
+}
+
+footer :hover {
+  color: yellow;
+}
+
 .upper {
   display: flex;
   justify-content: space-between;
@@ -18,15 +30,31 @@
   padding-right: 10em;
 }
 .upper i {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #2a3b88;
 }
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+.account {
+  border: solid black;
+}
+
 .lower {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #1c3572;
   padding-left: 1%;
+}
+.dropdown {
+}
+
+.dropdown-content {
 }
 
 .sticky {
@@ -52,6 +80,21 @@ header h1 {
   list-style-type: none;
   gap: 2em;
   font-size: 1.5em;
+}
+
+.links li {
+  padding: 0.5rem;
+}
+.links li :hover {
+  color: lightskyblue;
+}
+
+.links i {
+  color: white;
+}
+
+.links ul li a {
+  transition: all 0.3s;
 }
 
 .search-wrapper {
@@ -107,9 +150,6 @@ footer nav {
   justify-items: center;
 }
 
-.lower-footer li {
-  list-style: none;
-}
 .lower-footer a {
   color: white;
 }
