@@ -1,17 +1,31 @@
+let currentDropDown = 0;
+let dropDownIsOpen = false;
 
- window.onscroll = function() {stickyHeader()};
+let dropDownLinks = document.querySelectorAll(".top-links button");
 
- var header = document.getElementById("header");
+dropDownLinks.forEach((dropDownLink) => {
+  dropDownLink.addEventListener("click", clickedLink);
+});
 
- var sticky = header.offsetTop;
+function clickedLink(event) {
+  dropDownIsOpen = true;
+  currentDropDown = event.target.parent.getAttribute("data-drop-down");
+}
 
- function stickyHeader() {
-     if(window.pageYOffset > sticky){
-         header.classList.add("sticky");
-     }
-     else{
-         header.classList.remove("sticky");
-     }
-    }
+console.log(dropDownLinks);
 
-    
+window.onscroll = function () {
+  stickyHeader();
+};
+
+let header = document.getElementById("header");
+
+let sticky = header.offsetTop;
+
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

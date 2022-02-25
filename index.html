@@ -39,25 +39,50 @@
       </nav>
       <div class="lower" id="header">
         <div>
-          <ul class="links">
+          <ul class="top-links">
             <li>
-              <a href="lists.html">Lists</a>
-              <i class="fa-solid fa-caret-down"></i>
+              <a href="lists.html" data-dropdown="link-dropdown">Lists</a>
+              <button class="link">
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div class="link-dropdown">
+                <a id=""></a>
+                <a id=""></a>
+                <a id=""></a>
+                <a id=""></a>
+                <a id=""></a>
+              </div>
             </li>
             <li>
-              <a href="schedules.html">Schedules</a>
-              <i class="fa-solid fa-caret-down"></i>
+              <a href="schedules.html" data-dropdown="schedule-dropdown">Schedules</a>
+              <button class="link" data-dropdown="schedules-dropdown">
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div class="schedules-dropdown">
+                <a id=""></a>
+                <a id=""></a>
+                <a id=""></a>
+                <a id=""></a>
+                <a id=""></a>
+              </div>
             </li>
             <li>
               <a href="tierlist.html">Tierlist</a>
-              <i class="fa-solid fa-caret-down"></i>
+              <button class="link" data-dropdown="tierlist-dropdown">
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div class="tierlist-dropdown">
+
+              </div>
             </li>
             <li>
               <a href="community.html">Community</a>
-              <i class="fa-solid fa-caret-down"></i>
+              <button class="link" data-dropdown="community-dropdown">
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
             </li>
             <li>
-              <a href="donate.html">Donate</a>
+                <a href="donate.html">Donate</a>
             </li>
           </ul>
         </div>

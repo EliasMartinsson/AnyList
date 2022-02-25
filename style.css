@@ -73,6 +73,30 @@ header h1 {
   color: #2a3b88;
 }
 
+.top-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  gap: 2em;
+  font-size: 1.5em;
+}
+
+.top-links li{
+  padding: 0.5rem;
+}
+
+.top-links i{
+  color: white;
+}
+
+.top-links li :hover{
+  color: lightskyblue;
+}
+
+.top-links button{
+  visibility: none;
+}
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -82,9 +106,6 @@ header h1 {
   font-size: 1.5em;
 }
 
-.links li {
-  padding: 0.5rem;
-}
 .links li :hover {
   color: lightskyblue;
 }
