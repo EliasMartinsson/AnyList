@@ -11,87 +11,23 @@
   </head>
   <body>
     <header>
-      <nav class="upper">
-        <div>
-          <h1>AnyList</h1>
-        </div>
-        <div>
-          <img width="120em" class="logo" src="Logo.jpg" alt="Logo" />
-        </div>
-        <div class="dropdown" id="dropdown">
-          <button class="link" id="dropdown-button">
-            <i class="fa-solid fa-user" width="0.25rem"></i>
-          </button>
-          <div class="dropdown-content">
-            <ul>
-              <li>
-                <a id="">Sign in</a>
-              </li>
-              <li>
-                <a id="">Profile</a>
-              </li>
-              <li>
-                <a id="">Stuff</a>
-              </li>
-            </ul>
-          </div>
+      <nav class="upper-nav">
+        <h1>AnyList</h1>
+        <i class="fa-solid fa-user"></i>
+      </nav>
+      <nav class="lower-nav" id="header">
+        <ul>
+          <a href="index.html"><img src="Logo(Icon).jpg" alt="" /></a>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="tierlist.html">Tierlists</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+        <div class="searchbox">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <button><input type="search" placeholder="Search.." /></button>
         </div>
       </nav>
-      <div class="lower" id="header">
-        <div>
-          <ul class="top-links">
-            <li>
-              <a href="lists.html" data-dropdown="link-dropdown">Lists</a>
-              <button class="link">
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-              <div class="link-dropdown">
-                <a id=""></a>
-                <a id=""></a>
-                <a id=""></a>
-                <a id=""></a>
-                <a id=""></a>
-              </div>
-            </li>
-            <li>
-              <a href="schedules.html" data-dropdown="schedule-dropdown">Schedules</a>
-              <button class="link" data-dropdown="schedules-dropdown">
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-              <div class="schedules-dropdown">
-                <a id=""></a>
-                <a id=""></a>
-                <a id=""></a>
-                <a id=""></a>
-                <a id=""></a>
-              </div>
-            </li>
-            <li>
-              <a href="tierlist.html">Tierlist</a>
-              <button class="link" data-dropdown="tierlist-dropdown">
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-              <div class="tierlist-dropdown">
-
-              </div>
-            </li>
-            <li>
-              <a href="community.html">Community</a>
-              <button class="link" data-dropdown="community-dropdown">
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-            </li>
-            <li>
-                <a href="donate.html">Donate</a>
-            </li>
-          </ul>
-        </div>
-        <div class="search-wrapper">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search.." name="" id="" />
-          <i class="fa-solid fa-circle-xmark"></i>
-        </div>
-      </div>
     </header>
     <main>
       <div class="front-image">
@@ -101,28 +37,43 @@
           </h1>
           <p>
             Group your favorite artists, athletes, shows or even books with our
-            regular lists. You can also try ranking them through our tier lists
-            or why not create a schedule for yourself!
+            regular lists and share with others. You can also try ranking them
+            through our tier lists!
           </p>
           <br />
           <a href="">Create an account</a>
         </div>
         <img src="Front-image.png" alt="" />
       </div>
-      <!--
-      <div class="front-image">
-        <img src="Berserk.jpg" alt="" />
-        <img src="Aot.jpg" alt="" />
-        <img src="Schedule1.png" alt="" />
-        <img src="Schedule2.png" alt="" />
-        <img src="Coldplay.jpg" alt="" />
-        <img src="Avicii.jpg" alt="" />
-      </div>-->
+      <div class="content-description">
+        <h1 class="content-title">Pick a list</h1>
+        <p>
+          Click on tierlist to create a fresh template tierlist or click on the
+          regular list to customize your own personal list.
+        </p>
+        <div class="options">
+          <a href=""><img src="Tierlist.png" alt="" /></a>
+          <a href=""><img src="Regularlist.jpg" alt="" /></a>
+        </div>
+      </div>
+      <div class="community-container">
+        <h1 class="content-title">Community lists</h1>
+        <p>Browse community lists</p>
+        <div class="community-lists">
+          <img src="Berserk.jpg" alt="" />
+          <img src="Aot.jpg" alt="" />
+          <img src="Mobpsycho.jpg" alt="" />
+          <img src="Avicii.jpg" alt="" />
+          <img src="Coldplay.jpg" alt="" />
+          <img src="Hendrix.jpg" alt="" /> 
+        </div>
+        <a id="#">Browse Community lists</a>
+      </div>
     </main>
     <footer>
       <div class="upper-footer">
         <nav>
-          <ul class="links">
+          <ul class="medias">
             <h1>Follow us</h1>
             <li class="icon">
               <a href="https://discord.com"
@@ -147,7 +98,7 @@
           </ul>
         </nav>
         <nav>
-          <ul class="links">
+          <ul class="medias">
             <h1>Try out our app</h1>
             <li class="icon">
               <a href="https://appstore.com"
