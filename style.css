@@ -48,6 +48,11 @@
   cursor: pointer;
 }
 
+.lower-nav li {
+  display: flex;
+  align-items: center;
+}
+
 .lower-nav ul {
   display: flex;
   align-items: center;
@@ -205,14 +210,38 @@ footer nav {
   padding: 0.5rem;
 }
 
-.options {
+.lists {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  font-size: 2vw;
+  margin-top: 25vh;
+  gap: 10rem;
 }
 
-.options img {
-  width: 15vmax;
-  height: 30vmax;
+.tierlists {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  font-size: 2vw;
+  margin-top: 25vh;
+  gap: 10rem;
+}
+.tierlists img {
+  width: 50vmax;
+  height: auto;
+}
+
+.tierlists img:hover {
+  opacity: 0.5;
+}
+
+.lists img:hover {
+  opacity: 0.5;
+}
+
+.lists img {
+  width: 30vmax;
+  height: auto;
 }
 
 .content-title {
@@ -225,10 +254,6 @@ footer nav {
   flex-direction: column;
   align-items: center;
   font-size: 2vw;
-}
-
-.options img:hover {
-  opacity: 0.5;
 }
 
 .community-container {
@@ -266,19 +291,109 @@ footer nav {
   padding: 0.5rem;
 }
 
-.list-description-container{
+.list-description-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.list-description-container img{
+.list-description-container img {
   width: 30vmax;
   height: auto;
 }
-
-.lists-main{
+.lists-main {
   padding: 0;
   margin-top: 5vmax;
+}
+
+.listMaker {
+  margin: 10rem;
+}
+.donate-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.credit-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.donate {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1vw;
+  border: black solid 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.wrapper img {
+  width: 50vmax;
+  height: auto;
+}
+
+.wrapper ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.wrapper button {
+  color: white;
+  background-color: black;
+  width: 10rem;
+  border: 0.5rem solid;
+  border-radius: 5rem;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.payment span {
+  display: flex;
+  font-size: 1vw;
+  border: black solid 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.payment div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment i {
+  font-size: 1.5vw;
+}
+
+.payment button {
+  display: flex;
+  text-align: center;
+  border: black solid 0.5rem;
+  border-radius: 50%;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  background-image: url(Movies.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.community-item {
+  text-align: center;
+  background-color: white;
 }
