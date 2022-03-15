@@ -215,7 +215,7 @@ footer nav {
   justify-content: space-between;
   font-size: 2vw;
   margin-top: 25vh;
-  gap: 10rem;
+  gap: 5vw;
 }
 
 .tierlists {
@@ -224,7 +224,7 @@ footer nav {
   flex-direction: row-reverse;
   font-size: 2vw;
   margin-top: 25vh;
-  gap: 10rem;
+  gap: 5vw;
 }
 .tierlists img {
   width: 50vmax;
@@ -396,4 +396,8 @@ footer nav {
 .community-item {
   text-align: center;
   background-color: white;
+}
+
+i:hover{
+  color: yellow;
 }
