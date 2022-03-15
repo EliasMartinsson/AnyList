@@ -1,69 +1,49 @@
 
-document.querySelector("form").addEventListener("submit", todoList);
-let listContainer = document.querySelector("#todoList");
-let todoListItems = [
-];
+document.querySelector("form").addEventListener("submit", list);
+let listContainer = document.querySelector("#listMaker");
+let listItems = [];
 
 function removeItem(id) {
-    let itemToRemove = todoListItems.find( (item) => item.id === id );
-    todoListItems.splice(todoListItems.indexOf(itemToRemove), 1);
-    updateList();
+	let itemToRemove = listItems.find( (item) => item.id === id );
+	listItems.splice(listItems.indexOf(itemToRemove), 1);
+	updateList();
 }
 
-function todoList(event) {
-    event.preventDefault();
-    const todoInput = document.querySelector("#todoInput");
-    let item = todoInput.value;
-    let id = Date.now().toString();
-    if (item.trim() != "") {
-        todoListItems.push({ name: item.trim(), id: id});
-    }   
-    console.table(todoListItems);
-    let text = document.createTextNode(item);
-    const newItem = document.createElement('li');
-    newItem.appendChild(text);
-    const button = document.createElement('button');
-    button.innerHTML = " delete";
-    button.classList.add("remove-btn");
-    button.addEventListener("click", () => { removeItem(id) })
-    newItem.appendChild(button);
-    
-    document.getElementById('todoList').appendChild(newItem);
-    todoInput.value = "";
+function list(event) {
+	event.preventDefault();
+	const listInput = document.querySelector("#listInput");
+	let item = listInput.value;
+	let id = Date.now().toString();
+	if (item.trim() != "") {
+		listItems.push({ name: item.trim(), id: id});
+	}
+	updateList();	
+	
 }
 
 function updateList()
  {
-     // 1. Empty list
-     listContainer.innerHTML = "";
-     // 2. Repopulate lsit to match the content of todoListItems
-    todoListItems.forEach((item) => {
-        
-    }) 
+	 listContainer.innerHTML = "";
+   
+	listItems.forEach((item) => {
+		for(let i = 0; i < Array.length; i++) 
+		{
+			console.table(listItems);
+			let text = document.createTextNode(item.name);
+			const newItem = document.createElement('li');
+			newItem.appendChild(text);
+			const btn = document.createElement('button');
+			btn.innerHTML = " remove";
+			btn.classList.add("remove-btn");
+			btn.addEventListener("click", () => { removeItem(item.id) })
+			newItem.appendChild(btn);
+			document.getElementById('listMaker').appendChild(newItem);
+			listInput.value = "";
+		}
+	}) 
  }
 
-let currentDropDown = 0;
-let dropDownIsOpen = false;
-
-/*
-exempel på setAttrbite och getAttribute: 
-let myButton = document.querySelector("button");
-let buttonDropdown = myButton.getAttribute("data-dropdown");
-buttonDropdown = "hej";
-myButton.setAttrbute("data-dropdown", buttonDropdown); */
-
 let dropDownLinks = document.querySelectorAll(".lower-nav a");
-
-dropDownLinks.forEach((dropDownLink) => {
-  dropDownLink.addEventListener("click", clickedLink);
-});
-
-function clickedLink(event) {
-  dropDownIsOpen = true;
-  currentDropDown = event.target.parent.getAttribute("data-dropdown");
-  let dropDownElement = document.querySelector("." + currentDropDown);
-  dropDownElement.classList.toggle("visibility");
-}
 
 window.onscroll = function () {
   stickyHeader();

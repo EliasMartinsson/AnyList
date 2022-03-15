@@ -284,11 +284,14 @@ footer nav {
   padding: 0.5rem;
 }
 
-.list-description h1 {
+.lists-main h1 {
+  text-align: center;
   color: white;
   background-color: #1c3572;
   font-size: 2.5vw;
   padding: 0.5rem;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .list-description-container {
@@ -298,7 +301,12 @@ footer nav {
   justify-content: center;
 }
 
-.list-description-container img {
+.list-images {
+  display: flex;
+  justify-content: center;
+}
+
+.list-images img {
   width: 30vmax;
   height: auto;
 }
@@ -307,9 +315,6 @@ footer nav {
   margin-top: 5vmax;
 }
 
-.listMaker {
-  margin: 10rem;
-}
 .donate-main {
   display: flex;
   justify-content: center;
@@ -398,6 +403,41 @@ footer nav {
   background-color: white;
 }
 
-i:hover{
+i:hover {
   color: yellow;
+}
+
+.listMaker-container {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  padding: 1rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.listMaker-container input::placeholder {
+  font-size: 1vw;
+}
+
+.listMaker-container button {
+  padding: 0.5rem;
+  background-color: #1c3572;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black solid 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list button {
+  margin-left: 10vmax;
 }
