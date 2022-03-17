@@ -28,7 +28,6 @@ function updateList()
 	listItems.forEach((item) => {
 		for(let i = 0; i < Array.length; i++) 
 		{
-			console.table(listItems);
 			let text = document.createTextNode(item.name);
 			const newItem = document.createElement('li');
 			newItem.appendChild(text);
@@ -43,7 +42,6 @@ function updateList()
 	}) 
  }
 
-let dropDownLinks = document.querySelectorAll(".lower-nav a");
 
 window.onscroll = function () {
   stickyHeader();
