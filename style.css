@@ -441,3 +441,22 @@ i:hover {
 .list button {
   margin-left: 10vmax;
 }
+
+.scroll{
+  display: flex;
+  justify-content: center;
+  border: black solid 0.5rem;
+  border-radius: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+.scroll img {
+  width: 10vmax;
+  height: auto;
+}
+
+.scroll img:hover {
+  opacity: 0.5;
+}
